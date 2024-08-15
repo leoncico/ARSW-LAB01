@@ -4,15 +4,19 @@
  * and open the template in the editor.
  */
 package edu.eci.arsw.threads;
+import java.lang.Thread;
 
 /**
  *
  * @author hcadavid
  */
-public class CountThreadsMain {
-    
+public class CountThreadsMain extends Thread {
+   public void run(){  
+    System.out.println("thread is running...");  
+    } 
     public static void main(String a[]){
-        
+        MyThread thread = new MyThread();
+        thread.start();
     }
     
 }

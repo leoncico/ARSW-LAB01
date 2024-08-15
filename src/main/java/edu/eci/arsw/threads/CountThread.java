@@ -10,5 +10,10 @@ package edu.eci.arsw.threads;
  * @author hcadavid
  */
 public class CountThread {
-    
+    public void CountThread(a,b){
+        for(int i=a;i<=b;i++){
+            System.out.println(i);
+        }
+        
+    }
 }
