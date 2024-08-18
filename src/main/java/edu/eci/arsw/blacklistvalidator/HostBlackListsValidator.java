@@ -22,12 +22,20 @@ public class HostBlackListsValidator {
     
     public List<Integer> checkHost(String ipaddress, int numberThreads){
 
-        for(int i=0; i<numberThreads; i++){
-            i range =
-            HostBlackListsValidatorThreads thread = new HostBlackListsValidatorThreads(ipaddress, start, end);
-            thread.start();
-        }
+        int numberLists = skds.getRegisteredServersCount();
+        int parts = numberLists / numberThreads;
+        int residue = numberLists % numberThreads;
+        System.out.println(residue);
+        int ocurrences = 0;
 
+        int j = 0;
+
+        for(int i=1; i<numberThreads+1; i++){
+            System.out.println((i-1) * parts + "-" + i*parts);
+            //HostBlackListsValidatorThreads thread = new HostBlackListsValidatorThreads(ipaddress, (i-1) * parts, i*parts);
+            //thread.start();
+        }
+        return new LinkedList<>();
     }
 
 
