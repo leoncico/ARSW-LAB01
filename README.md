@@ -97,7 +97,7 @@ Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tie
 
 ![](img/Grafico.png)
 
-Respuesta: en este caso podemos notar que entre mas hilos le asignamos a nuestro programa mucho mas rapida es la ejecución, asi mismo consume mas memoria. En el caso de los 100 hilos la ejecución es tan rapida que el programa no alcanza a detectarla, por lo  cual podemos concluir que a mayor numero de hilos el tiempo de ejecución va a tender a ser cero.
+**Respuesta:** en este caso podemos notar que entre mas hilos le asignamos a nuestro programa mucho mas rapida es la ejecución, asi mismo consume mas memoria. En el caso de los 100 hilos la ejecución es tan rapida que el programa no alcanza a detectarla, por lo  cual podemos concluir que a mayor numero de hilos el tiempo de ejecución va a tender a ser cero.
 
 **Parte IV - Ejercicio Black List Search**
 
@@ -105,15 +105,15 @@ Respuesta: en este caso podemos notar que entre mas hilos le asignamos a nuestro
 
 	![](img/ahmdahls.png), donde _S(n)_ es el mejoramiento teórico del desempeño, _P_ la fracción paralelizable del algoritmo, y _n_ el número de hilos, a mayor _n_, mayor debería ser dicha mejora. Por qué el mejor desempeño no se logra con los 500 hilos?, cómo se compara este desempeño cuando se usan 200?. 
 
-	**Respuesta:**En este caso, el mejor desempeño va a depender de la capacidad de procesamiento y de recursos de la CPU, en donde debido a la gran cantidad de hilos el programa va a tardar mas en gestionar el funcionamiento de estos, que la propia ejecución de estos. Por lo que con 500 hilos va a haber una mayor sobrecarga a la maquina en comparación con 200 hilos con la cual se pueden aprovechar mejor los recursos del sistema, el cual ya paso su rendimiento maximo y aumentarlo ya llevaria a su degradación.
+	**Respuesta:** En este caso, el mejor desempeño va a depender de la capacidad de procesamiento y de recursos de la CPU, en donde debido a la gran cantidad de hilos el programa va a tardar mas en gestionar el funcionamiento de estos, que la propia ejecución de estos. Por lo que con 500 hilos va a haber una mayor sobrecarga a la maquina en comparación con 200 hilos con la cual se pueden aprovechar mejor los recursos del sistema, el cual ya paso su rendimiento maximo y aumentarlo ya llevaria a su degradación.
 
 2. Cómo se comporta la solución usando tantos hilos de procesamiento como núcleos comparado con el resultado de usar el doble de éste?.
 
-	**Respuesta:**Teoricamente el utilizar el mismo numero de hilos de procesamiento como nucleos es una manera optima, pues le estamos asignando un hilo a cada nucleo, sin embargo al realizar pruebas con respecto a nuestro programa podemos ver que se aprovecha mucho mas utilizando el doble de hilos con respecto a los nucleos, pues no estamos saturando la CPU y estamos aprovechando mejor la capacidad de nuestra maquina fisica para el beneficio de nuestro programa.
+	**Respuesta:** Teoricamente el utilizar el mismo numero de hilos de procesamiento como nucleos es una manera optima, pues le estamos asignando un hilo a cada nucleo, sin embargo al realizar pruebas con respecto a nuestro programa podemos ver que se aprovecha mucho mas utilizando el doble de hilos con respecto a los nucleos, pues no estamos saturando la CPU y estamos aprovechando mejor la capacidad de nuestra maquina fisica para el beneficio de nuestro programa.
 
 3. De acuerdo con lo anterior, si para este problema en lugar de 100 hilos en una sola CPU se pudiera usar 1 hilo en cada una de 100 máquinas hipotéticas, la ley de Amdahls se aplicaría mejor?. Si en lugar de esto se usaran c hilos en 100/c máquinas distribuidas (siendo c es el número de núcleos de dichas máquinas), se mejoraría?. Explique su respuesta.
 
-	**Respuesta**: En este caso se aprovecharia el paralelismo pues cada maquina va a tener una tarea independiente, sin embargo su rendimiento va a ser bajo debido a que se va a ver limitada la capacidad de las maquinas.
+	**Respuesta:** En este caso se aprovecharia el paralelismo pues cada maquina va a tener una tarea independiente, sin embargo su rendimiento va a ser bajo debido a que se va a ver limitada la capacidad de las maquinas.
 
 	En el caso de c hilos en 100/c maquinas va a tener un mejor funcionamiento en comparación al ejemplo anterior, sin embargo la respuesta puede variar segun sea el valor de c, pues de igual forma a como se explico anteriormente, entre mayor sea el valor, mayores problemas de sobrecargas van a existir.
 
