@@ -1,6 +1,7 @@
 
 ### Escuela Colombiana de Ingeniería
 ### Arquitecturas de Software - ARSW
+### Autores: Jeisson Steban Casallas Rozo y David Leonardo Piñeros Cortés
 ## Ejercicio Introducción al paralelismo - Hilos - Caso BlackListSearch
 
 
@@ -24,7 +25,8 @@
 	4. Cambie el incio con 'start()' por 'run()'. Cómo cambia la salida?, por qué?.
 	![](img/CountThreadsStart.png)
 	![](img/CountThreadsRun.png)
-	Respuesta: En cuanto al Start podemos ver que todos los hilos se ejecutan simultaneamente, por lo que nuestra salida se va a visualizar en desorden, mientras que con el Run, nuestra salida se va a ejecutar hilo por hilo, por lo cual los valores van de 0 a 299 en orden.
+	Respuesta: En cuanto al Start podemos ver que todos los hilos se ejecutan simultaneamente, por lo que nuestra salida se va a visualizar en desorden, mientras que con el método Run, cada instrucción se ejecuta luego de que la anterior haya finalizado su ejecución, por lo cual los valores van de 0 a 299 en orden. Esto se debe a que 
+	el método Start inicia el ciclo de vida del hilo y con el caso Run simplemente es un llamado al método.
 
 **Parte II - Ejercicio Black List Search**
 
